@@ -72,8 +72,19 @@
         </div>
     </header>
 
-  <!-- PORTADA / HERO -->
+ <!-- PORTADA / HERO -->
     <section class="min-h-screen pt-24 pb-20 flex items-center relative overflow-hidden bg-navy-dark">
+        <!-- Estilo interno para la animación flotante suave del mockup -->
+        <style>
+            @keyframes floatSlow {
+                0%, 100% { transform: translateY(0px) rotate(-1.5deg); }
+                50% { transform: translateY(-10px) rotate(-0.5deg); }
+            }
+            .mockup-float {
+                animation: floatSlow 6s ease-in-out infinite;
+            }
+        </style>
+
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
             <div class="lg:col-span-7 space-y-8">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-[1.15] text-white">
@@ -91,19 +102,25 @@
                 </div>
             </div>
 
-            <!-- Contenedor del mockup idéntico al de abajo, pero posicionado más arriba y a la derecha -->
+            <!-- Contenedor del mockup con la animación flotante -->
             <div class="lg:col-span-5 flex justify-center lg:justify-end pt-4">
-                <div class="relative w-full max-w-lg flex items-center justify-end">
+                <div class="relative w-full max-w-lg flex items-center justify-end mockup-float">
                     
-                    <!-- El móvil exactamente igual al de abajo, con su z-index y rotación -->
+                    <!-- El móvil con el favicon integrado en el centro -->
                     <div class="w-64 h-[380px] bg-slate-900 rounded-[36px] p-2 shadow-2xl border-4 border-slate-700 z-10 -mr-12 transform -rotate-3 overflow-hidden flex flex-col">
                         <div class="w-full h-full bg-slate-50 rounded-[30px] p-4 text-navy-900 flex flex-col items-center justify-center relative">
                             <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-950 rounded-full z-20"></div>
-                            <span class="font-serif font-bold text-2xl text-center">Adhere.</span>
+                            
+                            <!-- Contenedor del Favicon centrado -->
+                            <div class="w-16 h-16 flex items-center justify-center mb-3">
+                                <img src="favicon.png" alt="Adhere Logo" class="w-full h-full object-contain rounded-xl shadow-sm">
+                            </div>
+                            
+                            <span class="font-serif font-bold text-xl text-center">Adhere.</span>
                         </div>
                     </div>
                     
-                    <!-- El panel clínico de fondo exactamente igual al de abajo -->
+                    <!-- El panel clínico de fondo -->
                     <div class="w-full bg-slate-50 rounded-2xl p-6 shadow-2xl text-navy-900 transform translate-y-6">
                         <div class="w-32 h-4 bg-slate-200 rounded mb-6"></div>
                         <div class="grid grid-cols-3 gap-2 mb-6">
@@ -124,6 +141,7 @@
             </div>
         </div>
     </section>
+    
     <!-- EL PROBLEMA -->
     <section id="problema" class="py-24 bg-white text-navy-900">
         <div class="max-w-7xl mx-auto px-6">
