@@ -74,15 +74,8 @@
 
 <!-- PORTADA / HERO -->
     <section class="min-h-screen pt-24 pb-20 flex items-center relative overflow-hidden bg-navy-dark">
-        <!-- Estilos para la animación de entrada (slide horizontal) y el hover flotante -->
+        <!-- Estilo exclusivo para el movimiento flotante al pasar el ratón -->
         <style>
-            @keyframes slideInLeft {
-                0% { opacity: 0; transform: translateX(-40px); }
-                100% { opacity: 1; transform: translateX(0); }
-            }
-            .mockup-entry {
-                animation: slideInLeft 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-            }
             @keyframes floatHover {
                 0%, 100% { transform: translateY(0px) rotate(-3deg); }
                 50% { transform: translateY(-8px) rotate(-1.5deg); }
@@ -109,17 +102,17 @@
                 </div>
             </div>
 
-            <!-- Contenedor del mockup con dimensiones equilibradas, animación de entrada y hover -->
+            <!-- Contenedor del mockup con dimensiones originales y efecto hover -->
             <div class="lg:col-span-5 flex justify-center lg:justify-end pt-4">
-                <div class="relative w-full max-w-lg flex items-center justify-end mockup-entry mockup-hover-float transition-all duration-300">
+                <div class="relative w-full max-w-lg flex items-center justify-end mockup-hover-float transition-all duration-300">
                     
-                    <!-- El móvil con proporciones correctas, ancho natural y favicon -->
-                    <div class="w-68 h-[410px] bg-slate-900 rounded-[38px] p-2.5 shadow-2xl border-4 border-slate-700 z-10 -mr-14 transform -rotate-3 overflow-hidden flex flex-col">
-                        <div class="w-full h-full bg-slate-50 rounded-[32px] p-4 text-navy-900 flex flex-col items-center justify-center relative">
+                    <!-- Móvil con dimensiones exactas originales, favicon y texto -->
+                    <div class="w-64 h-[380px] bg-slate-900 rounded-[36px] p-2 shadow-2xl border-4 border-slate-700 z-10 -mr-12 transform -rotate-3 overflow-hidden flex flex-col">
+                        <div class="w-full h-full bg-slate-50 rounded-[30px] p-4 text-navy-900 flex flex-col items-center justify-center relative">
                             <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-950 rounded-full z-20"></div>
                             
-                            <!-- Favicon centrado -->
-                            <div class="w-18 h-18 flex items-center justify-center mb-3">
+                            <!-- Favicon centrado y proporcionado -->
+                            <div class="w-16 h-16 flex items-center justify-center mb-3">
                                 <img src="favicon.png" alt="Adhere Logo" class="w-full h-full object-contain rounded-2xl shadow-sm">
                             </div>
                             
@@ -127,7 +120,7 @@
                         </div>
                     </div>
                     
-                    <!-- El panel clínico de fondo con buen tamaño -->
+                    <!-- Panel clínico de fondo original -->
                     <div class="w-full bg-slate-50 rounded-2xl p-6 shadow-2xl text-navy-900 transform translate-y-6">
                         <div class="w-32 h-4 bg-slate-200 rounded mb-6"></div>
                         <div class="grid grid-cols-3 gap-2 mb-6">
