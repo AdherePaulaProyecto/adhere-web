@@ -72,9 +72,9 @@
         </div>
     </header>
 
-   <!-- PORTADA / HERO -->
+  <!-- PORTADA / HERO -->
     <section class="min-h-screen pt-24 pb-20 flex items-center relative overflow-hidden bg-navy-dark">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center w-full">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
             <div class="lg:col-span-7 space-y-8">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-[1.15] text-white">
                     El tratamiento se prescribe en consulta. <br>
@@ -91,12 +91,20 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-5 flex justify-center lg:justify-end relative pt-6">
-                <!-- Contenedor general del mockup desplazado a la derecha y arriba -->
-                <div class="relative w-full max-w-lg flex items-center justify-end pr-4">
+            <!-- Contenedor del mockup idéntico al de abajo, pero posicionado más arriba y a la derecha -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end pt-4">
+                <div class="relative w-full max-w-lg flex items-center justify-end">
                     
-                    <!-- Panel Clínico de fondo (más visible y desplazado a la derecha) -->
-                    <div class="w-[360px] sm:w-[400px] bg-slate-50/95 backdrop-blur-md rounded-2xl p-6 shadow-2xl text-navy-900 border border-slate-200/50 translate-x-8 sm:translate-x-12 -translate-y-4">
+                    <!-- El móvil exactamente igual al de abajo, con su z-index y rotación -->
+                    <div class="w-64 h-[380px] bg-slate-900 rounded-[36px] p-2 shadow-2xl border-4 border-slate-700 z-10 -mr-12 transform -rotate-3 overflow-hidden flex flex-col">
+                        <div class="w-full h-full bg-slate-50 rounded-[30px] p-4 text-navy-900 flex flex-col items-center justify-center relative">
+                            <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-950 rounded-full z-20"></div>
+                            <span class="font-serif font-bold text-2xl text-center">Adhere.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- El panel clínico de fondo exactamente igual al de abajo -->
+                    <div class="w-full bg-slate-50 rounded-2xl p-6 shadow-2xl text-navy-900 transform translate-y-6">
                         <div class="w-32 h-4 bg-slate-200 rounded mb-6"></div>
                         <div class="grid grid-cols-3 gap-2 mb-6">
                             <div class="h-8 bg-slate-200 rounded"></div>
@@ -112,23 +120,10 @@
                         </div>
                     </div>
 
-                    <!-- Móvil con borde fino y elegante, superpuesto a la izquierda del panel -->
-                    <div class="absolute -left-6 sm:-left-12 -top-10 w-[260px] sm:w-[280px] h-[520px] bg-slate-900 rounded-[40px] p-2.5 shadow-2xl border-2 border-slate-700/80 ring-1 ring-slate-700/30 z-10 transform -rotate-2 hover:rotate-0 transition-transform duration-500 flex flex-col">
-                        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-28 h-5 bg-slate-950 rounded-full z-20"></div>
-                        <div class="w-full h-full bg-slate-50 rounded-[32px] overflow-hidden flex flex-col items-center justify-center p-6 text-navy-900 relative">
-                            <div class="w-20 h-20 flex items-center justify-center mb-4">
-                                <img src="favicon.png" alt="Adhere Logo" class="w-full h-full object-contain rounded-2xl shadow-md">
-                            </div>
-                            <h2 class="font-serif font-bold text-xl text-center">Adhere.</h2>
-                            <div class="absolute bottom-5 w-24 h-1 bg-slate-300 rounded-full"></div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
-
     <!-- EL PROBLEMA -->
     <section id="problema" class="py-24 bg-white text-navy-900">
         <div class="max-w-7xl mx-auto px-6">
