@@ -404,46 +404,60 @@
         </div>
     </section>
 
-    <!-- QUIÉN HAY DETRÁS -->
-    <section class="py-28 bg-navy-dark text-white border-t border-navy-700">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+   <!-- QUIÉN HAY DETRÁS -->
+    <section class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <!-- Foto de la fundadora (limpia, estilo editorial sin caja pesada) -->
             <div class="lg:col-span-5 flex justify-center relative">
-                <div class="w-full max-w-sm bg-navy-800 rounded-3xl p-4 shadow-2xl border border-navy-600 overflow-hidden">
-                    <div class="w-full h-[400px] bg-slate-800 rounded-2xl overflow-hidden flex items-center justify-center">
-                        <img src="paula.png" alt="Paula García Martínez" class="w-full h-full object-cover">
+                <div class="w-full max-w-sm relative">
+                    <!-- Sutil resplandor de fondo para dar profundidad -->
+                    <div class="absolute inset-0 bg-olive-500/10 rounded-3xl blur-2xl -z-10"></div>
+                    
+                    <div class="w-full h-[420px] bg-slate-900 rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl relative">
+                        <img src="paula.png" alt="Paula García Martínez" class="w-full h-full object-cover object-top">
+                        <!-- Sutil degradado inferior para fundir con elegancia -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/40 via-transparent to-transparent"></div>
                     </div>
                 </div>
             </div>
 
+            <!-- Texto de la historia (sin caja contenedora, integrado de forma limpia) -->
             <div class="lg:col-span-7 space-y-6">
                 <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">¿Quién hay detrás?</span>
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
                     De una pregunta cotidiana a un proyecto sanitario.
                 </h2>
-                <div class="bg-navy-800/60 p-6 rounded-2xl border border-navy-700">
-                    <h3 class="font-bold text-lg mb-2 text-olive-accent">Soy Paula García, estudiante de último curso de Medicina y fundadora de Adhere.</h3>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                
+                <div class="space-y-4 pt-2">
+                    <h3 class="font-serif font-bold text-xl text-olive-accent">Soy Paula García, estudiante de último curso de Medicina y fundadora de Adhere.</h3>
+                    
+                    <p class="text-slate-300 text-base leading-relaxed font-light">
                         Para mí, la medicina siempre ha sido cuidar de personas, no solo tratar enfermedades. Y cuidando de las personas que más quiero fue cuando vi un problema que antes no había visto.
                     </p>
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-start gap-2">
-                            <span class="text-olive-accent font-bold">•</span>
-                            <span><strong class="text-white">El origen:</strong> Todo empezó en casa, viendo a mi abuela enfrentarse a dudas diarias con sus tratamientos. Me di cuenta de que, si yo no estaba allí para detectar esos problemas y ayudarles a resolverlos, nadie más lo hacía y con las consecuencias que eso podía tener para su salud.</span>
+
+                    <!-- Lista de puntos clave limpia, sin bordes artificiales -->
+                    <ul class="space-y-4 text-slate-300 text-base pt-2 border-t border-slate-800">
+                        <li class="flex items-start gap-3">
+                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
+                            <span><strong class="text-white font-medium">El origen:</strong> Todo empezó en casa, viendo a mi abuela enfrentarse a dudas diarias con sus tratamientos. Me di cuenta de que, si yo no estaba allí para detectar esos problemas y ayudarles a resolverlos, nadie más lo hacía y con las consecuencias que eso podía tener para su salud.</span>
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-olive-accent font-bold">•</span>
-                            <span><strong class="text-white">La realidad clínica:</strong> Poco después, empecé a ver exactamente lo mismo en consulta. La falta de adherencia no es un fallo del paciente, es una brecha invisible en nuestro sistema que no hemos conseguido solucionar aún.</span>
+                        <li class="flex items-start gap-3">
+                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
+                            <span><strong class="text-white font-medium">La realidad clínica:</strong> Poco después, empecé a ver exactamente lo mismo en consulta. La falta de adherencia no es un fallo del paciente, es una brecha invisible en nuestro sistema que no hemos conseguido solucionar aún.</span>
                         </li>
-                        <li class="flex items-start gap-2">
-                            <span class="text-olive-accent font-bold">•</span>
-                            <span><strong class="text-white">Entonces empecé a preguntarme:</strong> ¿Cómo podríamos extender el cuidado sanitario fuera de la clínica para ofrecer apoyo justo cuando más se necesita?</span>
+                        <li class="flex items-start gap-3">
+                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
+                            <span><strong class="text-white font-medium">Entonces empecé a preguntarme:</strong> ¿Cómo podríamos extender el cuidado sanitario fuera de la clínica para ofrecer apoyo justo cuando más se necesita?</span>
                         </li>
                     </ul>
-                    <p class="text-slate-300 text-sm leading-relaxed mt-4">
+
+                    <p class="text-slate-300 text-base leading-relaxed font-light pt-2">
                         Investigar esa duda me llevó a descubrir la magnitud de un problema histórico de la medicina y a diseñar Adhere, con el propósito de estar ahí justo donde se toman las decisiones que influyen en la salud.
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
