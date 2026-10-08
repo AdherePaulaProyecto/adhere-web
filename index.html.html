@@ -345,66 +345,148 @@
                 </div>
             </div>
 
-            <!-- COLUMNA DERECHA (7 columnas): Tarjetas compactas en cascada con SVG visible -->
-            <div class="lg:col-span-7 relative flex flex-col space-y-8 py-2 min-h-[520px]">
-                
-                <!-- SVG de las líneas conectoras de borde a borde en verde -->
-                <svg class="absolute inset-0 w-full h-full pointer-events-none hidden lg:block" style="z-index: 1;" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- De Tarjeta 01 (derecha) a Tarjeta 02 (izquierda) -->
-                    <path d="M 280 65 C 370 65, 370 160, 460 160" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
-                    <!-- De Tarjeta 02 (derecha) a Tarjeta 03 (izquierda) -->
-                    <path d="M 460 255 C 370 255, 370 350, 280 350" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
-                    <!-- De Tarjeta 03 (derecha) a Tarjeta 04 (izquierda) -->
-                    <path d="M 280 445 C 370 445, 370 540, 460 540" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
-                </svg>
+     
+<!-- COLUMNA DERECHA: DIAGRAMA DE FLUJO CLÍNICO -->
+<div class="lg:col-span-7 w-full flex items-center justify-center">
 
-                <!-- Paso 1 (Izquierda) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-5 shadow-xl w-full lg:w-[280px] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">01</span>
-                        <h3 class="font-serif font-bold text-sm text-slate-900">El día a día del paciente</h3>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed pl-9">
-                        Afronta su tratamiento y sus dudas en su día a día, fuera del entorno clínico, donde suelen surgir las barreras de adherencia.
-                    </p>
-                </div>
+    <div class="relative w-full max-w-[560px] h-auto lg:h-[600px] flex flex-col gap-5 lg:block">
 
-                <!-- Paso 2 (Derecha) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-5 shadow-xl w-full lg:w-[280px] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">02</span>
-                        <h3 class="font-serif font-bold text-sm text-slate-900">Acompañamiento Adhere</h3>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed pl-9">
-                        La plataforma brinda apoyo continuo y realiza un seguimiento activo para identificar la causa raíz de las dificultades del paciente.
-                    </p>
-                </div>
+        <!-- CONECTORES VERDES: detrás de las tarjetas -->
+        <svg
+            class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none"
+            viewBox="0 0 560 600"
+            preserveAspectRatio="none"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style="z-index: 1;"
+        >
+            <!-- 01 → 02 -->
+            <path
+                d="M 221 125 C 258 132, 278 181, 317 181"
+                stroke="#65a30d"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
 
-                <!-- Paso 3 (Izquierda) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-5 shadow-xl w-full lg:w-[280px] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">03</span>
-                        <h3 class="font-serif font-bold text-sm text-slate-900">Estructuración de datos</h3>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed pl-9">
-                        La información se procesa con base en guías clínicas y fuentes científicas verificadas, traduciéndose en métricas comprensibles.
-                    </p>
-                </div>
+            <!-- 02 → 03 -->
+            <path
+                d="M 327 270 C 314 294, 267 300, 226 310"
+                stroke="#65a30d"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
 
-                <!-- Paso 4 (Derecha) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-5 shadow-xl w-full lg:w-[280px] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
-                    <div class="flex items-center gap-3 mb-2">
-                        <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">04</span>
-                        <h3 class="font-serif font-bold text-sm text-slate-900">Decisión clínica óptima</h3>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed pl-9">
-                        El profesional sanitario recibe información clave que facilita la intervención temprana y optimiza la atención en consulta.
-                    </p>
-                </div>
+            <!-- 03 → 04 -->
+            <path
+                d="M 226 470 C 254 480, 272 520, 297 520"
+                stroke="#65a30d"
+                stroke-width="2"
+                stroke-linecap="round"
+            />
+        </svg>
 
+        <!-- PASO 01: DÍA A DÍA DEL PACIENTE -->
+        <div
+            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
+                   w-full lg:w-[221px] lg:h-[204px]
+                   flex flex-col justify-start border border-slate-100
+                   transition-all duration-300 hover:shadow-2xl
+                   lg:absolute lg:left-0 lg:top-0"
+            style="z-index: 2;"
+        >
+            <div class="flex items-center gap-2.5 mb-6">
+                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
+                             font-bold text-xs flex items-center justify-center shrink-0">
+                    01
+                </span>
+                <h3 class="font-serif font-bold text-sm text-slate-900">
+                    El día a día del paciente
+                </h3>
             </div>
 
+            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
+                Afronta su tratamiento y sus dudas en su día a día, fuera del
+                entorno clínico, donde suelen surgir las barreras de adherencia.
+            </p>
         </div>
+
+        <!-- PASO 02: ACOMPAÑAMIENTO ADHERE -->
+        <div
+            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
+                   w-full lg:w-[221px] lg:h-[204px]
+                   flex flex-col justify-start border border-slate-100
+                   transition-all duration-300 hover:shadow-2xl
+                   lg:absolute lg:left-[317px] lg:top-[76px]"
+            style="z-index: 2;"
+        >
+            <div class="flex items-center gap-2.5 mb-6">
+                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
+                             font-bold text-xs flex items-center justify-center shrink-0">
+                    02
+                </span>
+                <h3 class="font-serif font-bold text-sm text-slate-900">
+                    Acompañamiento Adhere
+                </h3>
+            </div>
+
+            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
+                La plataforma brinda apoyo continuo y realiza un seguimiento
+                activo para identificar la causa raíz de las dificultades del paciente.
+            </p>
+        </div>
+
+        <!-- PASO 03: ESTRUCTURACIÓN DE DATOS -->
+        <div
+            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
+                   w-full lg:w-[221px] lg:h-[204px]
+                   flex flex-col justify-start border border-slate-100
+                   transition-all duration-300 hover:shadow-2xl
+                   lg:absolute lg:left-[5px] lg:top-[277px]"
+            style="z-index: 2;"
+        >
+            <div class="flex items-center gap-2.5 mb-6">
+                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
+                             font-bold text-xs flex items-center justify-center shrink-0">
+                    03
+                </span>
+                <h3 class="font-serif font-bold text-sm text-slate-900">
+                    Estructuración de datos
+                </h3>
+            </div>
+
+            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
+                La información se procesa con base en guías clínicas y fuentes
+                científicas verificadas, traduciéndose en métricas comprensibles.
+            </p>
+        </div>
+
+        <!-- PASO 04: DECISIÓN CLÍNICA ÓPTIMA -->
+        <div
+            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
+                   w-full lg:w-[221px] lg:h-[204px]
+                   flex flex-col justify-start border border-slate-100
+                   transition-all duration-300 hover:shadow-2xl
+                   lg:absolute lg:left-[297px] lg:top-[372px]"
+            style="z-index: 2;"
+        >
+            <div class="flex items-center gap-2.5 mb-6">
+                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
+                             font-bold text-xs flex items-center justify-center shrink-0">
+                    04
+                </span>
+                <h3 class="font-serif font-bold text-sm text-slate-900">
+                    Decisión clínica óptima
+                </h3>
+            </div>
+
+            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
+                El profesional sanitario recibe información clave que facilita
+                la intervención temprana y optimiza la atención en consulta.
+            </p>
+        </div>
+
+    </div>
+</div>
     </div>
 </section>
     
