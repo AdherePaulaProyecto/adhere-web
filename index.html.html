@@ -45,12 +45,12 @@
 </head>
 <body class="bg-navy-dark text-slate-100 antialiased selection:bg-olive-500 selection:text-white">
 
-   <!-- CABECERA / NAVBAR PROFESIONAL -->
+   <!-- CABECERA / NAVBAR PROFESIONAL CON LOGO AMPLIADO -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo y Marca -->
-            <a href="#" class="flex items-center gap-3 group">
-                <img src="favicon.png" alt="Adhere Logo" class="w-9 h-9 object-contain rounded-xl">
+            <!-- Logo y Marca (Favicon ampliado) -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <img src="favicon.png" alt="Adhere Logo" class="w-11 h-11 object-contain rounded-2xl shadow-xs">
                 <span class="text-xl font-bold tracking-tight text-slate-900 font-serif">Adhere</span>
             </a>
 
@@ -62,16 +62,24 @@
                 <a href="#trayectoria" class="hover:text-slate-900 transition-colors">Trayectoria</a>
             </nav>
 
-            <!-- Acciones Derecha (Idioma y Contacto) -->
+            <!-- Acciones Derecha (Banderas y Contacto) -->
             <div class="flex items-center gap-4">
                 
-                <!-- Selector de Idioma (ES / CA) más elegante -->
-                <div class="flex items-center bg-slate-100 p-1 rounded-lg text-xs font-semibold text-slate-700">
-                    <button onclick="cambiarIdioma('es')" class="px-2.5 py-1 rounded-md bg-white shadow-xs text-slate-900 transition" id="btn-es">ES</button>
-                    <button onclick="cambiarIdioma('ca')" class="px-2.5 py-1 rounded-md text-slate-500 hover:text-slate-900 transition" id="btn-ca">CAT</button>
+                <!-- Selector de Idioma con Banderas -->
+                <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl border border-slate-200/60 text-xs">
+                    <!-- Botón Español -->
+                    <button onclick="cambiarIdioma('es')" title="Castellano" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white shadow-xs font-medium text-slate-800 transition">
+                        <span class="text-base leading-none">🇪🇸</span>
+                        <span class="hidden sm:inline">ES</span>
+                    </button>
+                    <!-- Botón Catalán -->
+                    <button onclick="cambiarIdioma('ca')" title="Català" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white/50 transition">
+                        <span class="text-base leading-none">🇦🇩</span>
+                        <span class="hidden sm:inline">CAT</span>
+                    </button>
                 </div>
 
-                <!-- Botón de Contacto Estilizado (Más Profesional y menos IA) -->
+                <!-- Botón de Contacto Estilizado -->
                 <a href="#contacto" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-medium text-sm transition shadow-md shadow-navy-900/10 flex items-center gap-2">
                     <span>Contáctanos</span>
                     <i class="fa-solid fa-arrow-right text-xs opacity-70"></i>
