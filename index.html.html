@@ -460,53 +460,110 @@
         </div>
     </section>
     
-    <!-- TRAYECTORIA -->
-    <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700">
+   <!-- TRAYECTORIA Y APOYOS -->
+    <section class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
+        <style>
+            @keyframes fadeInRight {
+                from { opacity: 0; transform: translateX(-20px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+            .timeline-delay-1 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.1s; }
+            .timeline-delay-2 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.25s; }
+            .timeline-delay-3 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.4s; }
+            .timeline-delay-4 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.55s; }
+            .timeline-delay-5 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.7s; }
+            .timeline-delay-6 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.85s; }
+        </style>
+
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
-                <div class="lg:col-span-5 space-y-6">
+            
+            <!-- Cabecera y Línea de Tiempo -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+                
+                <!-- Columna Izquierda: Título -->
+                <div class="lg:col-span-5 space-y-4">
                     <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Trayectoria</span>
-                    <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white leading-tight">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
                         Un proyecto que avanza con propósito y apoyo.
                     </h2>
                 </div>
 
-                <div class="lg:col-span-7 relative pl-8 border-l-2 border-olive-accent space-y-8">
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base">Programa pre-incubación Santander X Explorer</h4>
+                <!-- Columna Derecha: Listado desplegable animado -->
+                <div class="lg:col-span-7 relative pl-6 border-l-2 border-slate-700/80 space-y-8">
+                    
+                    <!-- Hito 1 -->
+                    <div class="relative flex items-center timeline-delay-1">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base">Programa pre-incubación Santander X Explorer</p>
                     </div>
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base">Ganador de <span class="text-olive-accent">Santander X Explorer Tarragona</span> 🏆</h4>
+
+                    <!-- Hito 2 -->
+                    <div class="relative flex items-center timeline-delay-2">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base">Ganador de Santander X Explorer Tarragona 🏆</p>
                     </div>
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base">Mención de honor como finalista <span class="text-olive-accent">en Santander X Award 2025-2026</span> 🏆</h4>
+
+                    <!-- Hito 3 -->
+                    <div class="relative flex items-center timeline-delay-3">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base">Mención de honor como finalista en Santander X Award 2025-2026 🏆</p>
                     </div>
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base">Finalista en <span class="text-olive-accent">Falling Walls Lab Barcelona</span></h4>
+
+                    <!-- Hito 4 -->
+                    <div class="relative flex items-center timeline-delay-4">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base">Finalista en Falling Walls Lab Barcelona</p>
                     </div>
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base"><span class="text-olive-accent">Financiación semilla</span> a través del <span class="text-olive-accent">premio del Consejo Social de la URV</span> a las Mejores Ideas Emprendedoras Universitarias, con el apoyo de la diputació de Tarragona 🏆</h4>
+
+                    <!-- Hito 5 -->
+                    <div class="relative flex items-center timeline-delay-5">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base leading-relaxed">
+                            Financiación semilla a través del <strong class="text-olive-accent font-semibold">premio del Consejo Social de la URV</strong> a las Mejores Ideas Emprendedoras Universitarias, con el apoyo de la Diputació de Tarragona 🏆
+                        </p>
                     </div>
-                    <div class="relative">
-                        <span class="absolute -left-[41px] top-1.5 w-4 h-4 rounded-full bg-olive-accent border-4 border-navy-dark"></span>
-                        <h4 class="font-bold text-white text-base">Programa de aceleración de <span class="text-olive-accent">MentorDay</span> completado + mentoría</h4>
+
+                    <!-- Hito 6 -->
+                    <div class="relative flex items-center timeline-delay-6">
+                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
+                        <p class="text-white font-medium text-base">Programa de aceleración de MentorDay completado + mentoría</p>
                     </div>
+
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-center text-center shadow-lg">
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">Santander X Explorer</div>
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">Universitat Rovira i Virgili Consell Social</div>
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">Explorer</div>
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">Falling Walls LAB</div>
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">mentorDay</div>
-                <div class="font-bold text-slate-800 text-xs sm:text-sm">Diputació Tarragona</div>
+            <!-- Tarjeta Blanca Inferior con Logos Institucionales -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+                    
+                    <!-- Logo 1 -->
+                    <div class="flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
+                        <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-10 w-auto object-contain">
+                    </div>
+
+                    <!-- Logo 2 -->
+                    <div class="flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
+                        <img src="logo-urv.png" alt="URV Consell Social" class="max-h-12 w-auto object-contain">
+                    </div>
+
+                    <!-- Logo 3 -->
+                    <div class="flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
+                        <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-10 w-auto object-contain">
+                    </div>
+
+                    <!-- Logo 4 -->
+                    <div class="flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
+                        <img src="logo-mentorday.png" alt="mentorDay" class="max-h-10 w-auto object-contain">
+                    </div>
+
+                    <!-- Logo 5 -->
+                    <div class="flex items-center justify-center p-2 grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100">
+                        <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-10 w-auto object-contain">
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </section>
 
