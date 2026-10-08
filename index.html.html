@@ -301,12 +301,12 @@
         </div>
     </section>
 
-   <!-- PRESENCIA / PROPUESTA DE VALOR (FLUJO CLÍNICO) -->
+  <!-- PRESENCIA / PROPUESTA DE VALOR (FLUJO CLÍNICO) -->
 <section id="propuesta-de-valor" class="py-24 bg-navy-dark text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6">
         
-        <!-- Contenedor Principal en dos columnas (Izquierda: Textos y Bloques | Derecha: Tarjetas de Flujo en cascada) -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <!-- Contenedor Principal en dos columnas -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <!-- COLUMNA IZQUIERDA (5 columnas): Título, introducción y bloques inferiores -->
             <div class="lg:col-span-5 space-y-8">
@@ -321,7 +321,7 @@
                     </p>
                 </div>
 
-                <!-- Bloques inferiores originales (Cocreación y Rigor con tarjetas oscuras) -->
+                <!-- Bloques inferiores (Cocreación y Rigor con tarjetas oscuras) -->
                 <div class="space-y-6 pt-4">
                     <!-- Pilar 1: Cocreación -->
                     <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 shadow-lg">
@@ -345,12 +345,22 @@
                 </div>
             </div>
 
-            <!-- COLUMNA DERECHA (7 columnas): Las 4 tarjetas blancas en escalera/cascada con hover verde -->
-            <div class="lg:col-span-7 flex flex-col space-y-6 lg:pt-8">
+            <!-- COLUMNA DERECHA (7 columnas): Las 4 tarjetas compactas con las líneas conectoras verdes -->
+            <div class="lg:col-span-7 relative flex flex-col space-y-4">
                 
-                <!-- Paso 1 (Alineado a la izquierda) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full sm:w-[85%] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-3 mb-3">
+                <!-- SVG de las líneas conectoras curvas entre las tarjetas -->
+                <svg class="absolute inset-0 w-full h-full pointer-events-none hidden lg:block" style="z-index: 1;" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Curva de 01 a 02 -->
+                    <path d="M 190 95 C 320 95, 320 185, 450 185" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Curva de 02 a 03 -->
+                    <path d="M 450 275 C 320 275, 320 365, 190 365" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Curva de 03 a 04 -->
+                    <path d="M 190 455 C 320 455, 320 545, 450 545" stroke="#65a30d" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+
+                <!-- Paso 1 (Izquierda) -->
+                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[310px] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
+                    <div class="flex items-center gap-3 mb-2">
                         <span class="w-7 h-7 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">01</span>
                         <h3 class="font-serif font-bold text-base text-slate-900">El día a día del paciente</h3>
                     </div>
@@ -359,9 +369,9 @@
                     </p>
                 </div>
 
-                <!-- Paso 2 (Desplazado hacia la derecha) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full sm:w-[85%] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-3 mb-3">
+                <!-- Paso 2 (Derecha) -->
+                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[310px] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
+                    <div class="flex items-center gap-3 mb-2">
                         <span class="w-7 h-7 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">02</span>
                         <h3 class="font-serif font-bold text-base text-slate-900">Acompañamiento Adhere</h3>
                     </div>
@@ -370,9 +380,9 @@
                     </p>
                 </div>
 
-                <!-- Paso 3 (Alineado a la izquierda) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full sm:w-[85%] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-3 mb-3">
+                <!-- Paso 3 (Izquierda) -->
+                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[310px] self-start relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
+                    <div class="flex items-center gap-3 mb-2">
                         <span class="w-7 h-7 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">03</span>
                         <h3 class="font-serif font-bold text-base text-slate-900">Estructuración de datos</h3>
                     </div>
@@ -381,9 +391,9 @@
                     </p>
                 </div>
 
-                <!-- Paso 4 (Desplazado hacia la derecha) -->
-                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full sm:w-[85%] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-3 mb-3">
+                <!-- Paso 4 (Derecha) -->
+                <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[310px] self-end relative border border-slate-100 hover:border-olive-500/50 transition-all duration-300" style="z-index: 2;">
+                    <div class="flex items-center gap-3 mb-2">
                         <span class="w-7 h-7 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">04</span>
                         <h3 class="font-serif font-bold text-base text-slate-900">Decisión clínica óptima</h3>
                     </div>
@@ -397,7 +407,6 @@
         </div>
     </div>
 </section>
-
 <!-- QUIÉN HAY DETRÁS -->
     <section class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
