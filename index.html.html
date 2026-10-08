@@ -564,40 +564,67 @@
     </div>
 </div>
 
-    <!-- CONTACTO FINAL -->
-    <section id="contacto" class="py-32 bg-navy-dark text-white border-t border-navy-700 text-center relative overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 space-y-8">
-            <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">CONVERSEMOS</span>
-            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white">
-                ¿Quieres conocer Adhere?
+   <!-- LLAMADA A COLABORAR (Última sección antes del footer) -->
+    <section class="py-28 bg-gradient-to-b from-navy-dark to-[#051322] text-white border-t border-navy-700/50 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Colaboración</span>
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-tight">
+                ¿Quieres formar parte del proyecto?
             </h2>
-            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
-                Si trabajas en el ámbito sanitario, investigas sobre adherencia o estás interesado en colaborar con el proyecto, me encantará conocer tu perspectiva.
+            <p class="text-slate-300 text-lg sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                Estamos abiertos a colaborar con profesionales sanitarios, organizaciones y pacientes para seguir desarrollando Adhere.
             </p>
-
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 pt-6">
-                <a href="https://linkedin.com" target="_blank" class="flex items-center gap-4 px-6 py-4 rounded-2xl bg-navy-800 hover:bg-navy-700 border border-navy-600 transition group shadow-lg">
-                    <div class="w-10 h-10 rounded-xl bg-white text-navy-900 flex items-center justify-center text-lg font-bold">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <span class="font-semibold text-sm text-white">Paula García Martínez</span>
-                    <i class="fa-solid fa-arrow-turn-down text-olive-accent group-hover:translate-x-1 transition-transform"></i>
-                </a>
-
-                <a href="mailto:adhere.appsalud@gmail.com" class="flex items-change gap-4 px-6 py-4 rounded-2xl bg-navy-800 hover:bg-navy-700 border border-navy-600 transition group shadow-lg">
-                    <div class="w-10 h-10 rounded-xl bg-white text-navy-900 flex items-center justify-center text-lg">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <span class="font-semibold text-sm text-white">adhere.appsalud@gmail.com</span>
-                    <i class="fa-solid fa-arrow-turn-down text-olive-accent group-hover:translate-x-1 transition-transform"></i>
+            <div class="pt-4">
+                <a href="mailto:contacto@adhere.es" id="contacto" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-olive-600 hover:bg-olive-500 text-white font-semibold text-base transition shadow-xl shadow-olive-600/30 group">
+                    <span>Contacta con nosotros</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 bg-navy-900 text-center text-xs text-slate-400 border-t border-navy-800">
-        <p>&copy; 2026 Adhere. Todos los derechos reservados.</p>
+    <footer class="bg-[#051322] border-t border-slate-800/80 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+                <!-- Columna 1: Marca / Eslogan -->
+                <div class="space-y-4">
+                    <span class="font-serif font-bold text-white text-xl tracking-wider block">ADHERE</span>
+                    <p class="text-sm text-slate-400 max-w-xs leading-relaxed">
+                        Acompañamos al paciente allí donde ocurre la adherencia.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Explora -->
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-300 block mb-2">EXPLORA</span>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#sobre-adhere" class="hover:text-white transition">Sobre Adhere</a></li>
+                        <li><a href="#trayectoria" class="hover:text-white transition">Trayectoria</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-slate-300 block mb-2">CONTACTO</span>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">adhere.appsalud@gmail.com</a></li>
+                        <li><a href="www.linkedin.com/in/paula-garcía-martinez-7067303a5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Línea divisoria -->
+            <div class="border-t border-slate-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Adhere</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:text-slate-400 transition">Política de privacidad</a>
+                    <span>&middot;</span>
+                    <a href="#" class="hover:text-slate-400 transition">Aviso legal</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
