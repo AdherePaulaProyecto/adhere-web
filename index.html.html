@@ -45,7 +45,7 @@
 </head>
 <body class="bg-navy-dark text-slate-100 antialiased selection:bg-olive-500 selection:text-white">
 
-   <!-- CABECERA / NAVBAR PROFESIONAL CON LOGO AMPLIADO -->
+<!-- CABECERA / NAVBAR CON TUS BANDERAS REALES -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo y Marca (Favicon ampliado) -->
@@ -62,20 +62,18 @@
                 <a href="#trayectoria" class="hover:text-slate-900 transition-colors">Trayectoria</a>
             </nav>
 
-            <!-- Acciones Derecha (Banderas y Contacto) -->
+            <!-- Acciones Derecha (Banderas e Imágenes reales y Botón de Contacto) -->
             <div class="flex items-center gap-4">
                 
-                <!-- Selector de Idioma con Banderas -->
-                <div class="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl border border-slate-200/60 text-xs">
+                <!-- Selector de Idioma con tus imágenes de bandera -->
+                <div class="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200/60">
                     <!-- Botón Español -->
-                    <button onclick="cambiarIdioma('es')" title="Castellano" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white shadow-xs font-medium text-slate-800 transition">
-                        <span class="text-base leading-none">🇪🇸</span>
-                        <span class="hidden sm:inline">ES</span>
+                    <button onclick="cambiarIdioma('es')" title="Castellano" class="p-1.5 rounded-lg bg-white shadow-xs hover:opacity-100 transition flex items-center justify-center">
+                        <img src="banderaespaña.webp" alt="Español" class="w-5 h-4 object-cover rounded-sm">
                     </button>
                     <!-- Botón Catalán -->
-                    <button onclick="cambiarIdioma('ca')" title="Català" class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white/50 transition">
-                        <span class="text-base leading-none">🇦🇩</span>
-                        <span class="hidden sm:inline">CAT</span>
+                    <button onclick="cambiarIdioma('ca')" title="Català" class="p-1.5 rounded-lg hover:bg-white/50 opacity-70 hover:opacity-100 transition flex items-center justify-center">
+                        <img src="banderacataluña.jpg" alt="Català" class="w-5 h-4 object-cover rounded-sm">
                     </button>
                 </div>
 
