@@ -485,7 +485,7 @@
         </script>
     </section>
     
-<!-- TRAYECTORIA Y APOYOS (AZUL) -->
+<!-- TRAYECTORIA Y APOYOS (MANTENIENDO CAJA ORIGINAL Y AÑADIENDO MOVIMIENTO CORREDERA) -->
     <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <style>
             @keyframes fadeInRight {
@@ -498,6 +498,20 @@
             .timeline-delay-4 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.55s; }
             .timeline-delay-5 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.7s; }
             .timeline-delay-6 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.85s; }
+
+            /* Animación del carrusel infinito corredera */
+            @keyframes sliderMove {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .infinite-slider-track {
+                display: flex;
+                width: max-content;
+                animation: sliderMove 18s linear infinite;
+            }
+            .infinite-slider-track:hover {
+                animation-play-state: paused;
+            }
         </style>
 
         <div class="max-w-7xl mx-auto px-6">
@@ -544,26 +558,41 @@
                 </div>
             </div>
 
-            <!-- Tarjeta Blanca Inferior con Logos -->
-            <div class="bg-white rounded-3xl px-8 py-5 shadow-2xl">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-20 w-auto object-contain">
+            <!-- Contenedor blanco exactamente igual al tuyo con movimiento corredera -->
+            <div class="mt-16 max-w-6xl mx-auto">
+                <div class="bg-white text-navy-900 p-8 sm:p-10 rounded-3xl shadow-xl border border-slate-100 overflow-hidden relative">
+                    
+                    <!-- Sombras de degradado suave en los bordes izquierdo y derecho -->
+                    <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+                    <div class="flex overflow-hidden">
+                        <div class="infinite-slider-track items-center gap-16">
+                            
+                           <!-- Bloque 1 de logos -->
+                            <div class="flex items-center gap-16 shrink-0">
+                                <img src="ruta-logo-santander.png" alt="Santander X" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-urv.png" alt="URV Consell Social" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-falling.png" alt="Falling Walls Lab" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-mentorday.png" alt="MentorDay" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-diputacio.png" alt="Diputació de Tarragona" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                            </div>
+
+                            <!-- Bloque 2 de logos (Duplicado exacto para hacer el bucle infinito perfecto) -->
+                            <div class="flex items-center gap-16 shrink-0" aria-hidden="true">
+                                <img src="ruta-logo-santander.png" alt="" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-urv.png" alt="" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-falling.png" alt="" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-mentorday.png" alt="" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                                <img src="ruta-logo-diputacio.png" alt="" class="h-12 w-auto object-contain hover:scale-105 transition-transform duration-300">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-urv.jpg" alt="URV Consell Social" class="max-h-24 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-20 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-mentorday.png" alt="mentorDay" class="max-h-20 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-20 w-auto object-contain">
-                    </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
