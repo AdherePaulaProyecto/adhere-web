@@ -487,9 +487,9 @@
         </div>
     </section>
 
-  <!-- SECCIÓN COLABORACIÓN (BLANCO CON DIFUMINADO CORTO AL FINAL) -->
-    <section class="pt-28 pb-32 bg-white text-navy-900 border-t border-slate-100 relative">
-        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10 mb-12">
+ <!-- SECCIÓN COLABORACIÓN (BLANCO CON DEGRADADO ULTRASUAVE) -->
+    <section class="pt-28 pb-36 bg-white text-navy-900 border-t border-slate-100 relative">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10 mb-8">
             <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">Colaboración</span>
             <h2 class="text-4xl sm:text-5xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
                 ¿Quieres formar parte del proyecto?
@@ -505,8 +505,16 @@
             </div>
         </div>
 
-        <!-- Transición rápida y limpia en la parte inferior -->
-        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#0a2540] pointer-events-none"></div>
+        <!-- Transición con paradas múltiples para eliminar franjas/bandas -->
+        <div class="absolute bottom-0 left-0 right-0 h-36 pointer-events-none" 
+             style="background: linear-gradient(to bottom, 
+                rgba(10, 37, 64, 0) 0%, 
+                rgba(10, 37, 64, 0.08) 20%, 
+                rgba(10, 37, 64, 0.25) 40%, 
+                rgba(10, 37, 64, 0.55) 65%, 
+                rgba(10, 37, 64, 0.85) 85%, 
+                rgba(10, 37, 64, 1) 100%);">
+        </div>
     </section>
 
     <!-- FOOTER (FONDO AZUL SÓLIDO Y LETRAS BLANCAS) -->
