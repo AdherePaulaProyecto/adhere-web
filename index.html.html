@@ -485,7 +485,7 @@
         </script>
     </section>
     
- <!-- TRAYECTORIA Y APOYOS (CON CARRUSEL INFINITO DE LOGOS Y TARJETA MÁS ESTRECHA) -->
+<!-- TRAYECTORIA Y APOYOS (CARRUSEL MÁS RÁPIDO Y ESPACIOS CORREGIDOS) -->
     <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <style>
             @keyframes fadeInRight {
@@ -499,7 +499,7 @@
             .timeline-delay-5 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.7s; }
             .timeline-delay-6 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.85s; }
 
-            /* Animación del carrusel infinito horizontal */
+            /* Animación del carrusel infinito (velocidad mayor: 18s) */
             @keyframes scrollLogo {
                 0% { transform: translateX(0); }
                 100% { transform: translateX(-50%); }
@@ -507,7 +507,7 @@
             .animate-infinite-scroll {
                 display: flex;
                 width: max-content;
-                animation: scrollLogo 30s linear infinite;
+                animation: scrollLogo 18s linear infinite;
             }
             .animate-infinite-scroll:hover {
                 animation-play-state: paused;
@@ -525,77 +525,7 @@
 
                 <div class="lg:col-span-7 relative pl-6 border-l-2 border-slate-700/80 space-y-8">
                     <div class="relative flex items-center timeline-delay-1">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base">Programa pre-incubación Santander X Explorer</p>
-                    </div>
-
-                    <div class="relative flex items-center timeline-delay-2">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base">Ganador de Santander X Explorer Tarragona 🏆</p>
-                    </div>
-
-                    <div class="relative flex items-center timeline-delay-3">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base">Mención de honor como finalista en Santander X Award 2025-2026 🏆</p>
-                    </div>
-
-                    <div class="relative flex items-center timeline-delay-4">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base">Finalista en Falling Walls Lab Barcelona</p>
-                    </div>
-
-                    <div class="relative flex items-center timeline-delay-5">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base leading-relaxed">
-                            Financiación semilla a través del <strong class="text-olive-accent font-semibold">premio del Consejo Social de la URV</strong> a las Mejores Ideas Emprendedoras Universitarias, con el apoyo de la Diputació de Tarragona 🏆
-                        </p>
-                    </div>
-
-                    <div class="relative flex items-center timeline-delay-6">
-                        <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
-                        <p class="text-white font-medium text-base">Programa de aceleración de MentorDay completado + mentoría</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contenedor de logos en carrusel (más estrecho verticalmente) -->
-            <div class="mt-12 max-w-6xl mx-auto">
-                <div class="bg-white text-navy-900 py-4.5 rounded-3xl shadow-[0_10px_30px_-5px_rgba(4,15,30,0.3)] border border-slate-100 overflow-hidden relative">
-                    
-                    <!-- Degradados laterales sutiles -->
-                    <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
-                    <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
-
-                    <!-- Pista deslizante infinita -->
-                    <div class="flex overflow-hidden">
-                        <div class="animate-infinite-scroll flex items-center gap-14 px-6">
-                            
-                            <!-- Grupo 1 de Logos -->
-                            <div class="flex items-center gap-14 shrink-0">
-                                <img src="ruta-logo-santander.png" alt="Santander X" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-urv.png" alt="URV Consell Social" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-falling.png" alt="Falling Walls Lab" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-mentorday.png" alt="MentorDay" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-diputacio.png" alt="Diputació de Tarragona" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                            </div>
-
-                            <!-- Grupo 2 de Logos (Duplicado para el bucle continuo) -->
-                            <div class="flex items-center gap-14 shrink-0" aria-hidden="true">
-                                <img src="ruta-logo-santander.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-urv.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-falling.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-mentorday.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                                <img src="ruta-logo-diputacio.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
+                        <div class="absolute -left-[31
 
 <!-- SECCIÓN COLABORACIÓN (BLANCO LIMPIO) -->
     <section class="py-28 bg-white text-navy-900 border-t border-slate-100">
