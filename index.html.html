@@ -45,7 +45,7 @@
 </head>
 <body class="bg-navy-dark text-slate-100 antialiased selection:bg-olive-500 selection:text-white">
 
-<!-- CABECERA / NAVBAR CON BANDERAS EQUILIBRADAS -->
+    <!-- CABECERA / NAVBAR -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo y Marca -->
@@ -62,22 +62,18 @@
                 <a href="#trayectoria" class="hover:text-slate-900 transition-colors">Trayectoria</a>
             </nav>
 
-            <!-- Acciones Derecha (Selector de banderas equilibrado y botón de contacto) -->
+            <!-- Acciones Derecha -->
             <div class="flex items-center gap-4">
-
-                <!-- Botón de Contacto Estilizado -->
                 <a href="#contacto" class="px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-medium text-sm transition shadow-md shadow-navy-900/10 flex items-center gap-2">
                     <span>Contáctanos</span>
                     <i class="fa-solid fa-arrow-right text-xs opacity-70"></i>
                 </a>
-
             </div>
         </div>
     </header>
     
-<!-- PORTADA / HERO -->
+    <!-- PORTADA / HERO (AZUL) -->
     <section class="min-h-screen pt-24 pb-20 flex items-center relative overflow-hidden bg-navy-dark">
-        <!-- Estilo exclusivo para el movimiento flotante al pasar el ratón -->
         <style>
             @keyframes floatHover {
                 0%, 100% { transform: translateY(0px) rotate(-3deg); }
@@ -105,25 +101,18 @@
                 </div>
             </div>
 
-            <!-- Contenedor del mockup con dimensiones originales y efecto hover -->
             <div class="lg:col-span-5 flex justify-center lg:justify-end pt-4">
                 <div class="relative w-full max-w-lg flex items-center justify-end mockup-hover-float transition-all duration-300">
-                    
-                    <!-- Móvil con dimensiones exactas originales, favicon y texto -->
                     <div class="w-64 h-[380px] bg-slate-900 rounded-[36px] p-2 shadow-2xl border-4 border-slate-700 z-10 -mr-12 transform -rotate-3 overflow-hidden flex flex-col">
                         <div class="w-full h-full bg-slate-50 rounded-[30px] p-4 text-navy-900 flex flex-col items-center justify-center relative">
                             <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-4 bg-slate-950 rounded-full z-20"></div>
-                            
-                            <!-- Favicon centrado y proporcionado -->
                             <div class="w-16 h-16 flex items-center justify-center mb-3">
                                 <img src="favicon.png" alt="Adhere Logo" class="w-full h-full object-contain rounded-2xl shadow-sm">
                             </div>
-                            
                             <span class="font-serif font-bold text-xl text-center">Adhere.</span>
                         </div>
                     </div>
                     
-                    <!-- Panel clínico de fondo original -->
                     <div class="w-full bg-slate-50 rounded-2xl p-6 shadow-2xl text-navy-900 transform translate-y-6">
                         <div class="w-32 h-4 bg-slate-200 rounded mb-6"></div>
                         <div class="grid grid-cols-3 gap-2 mb-6">
@@ -139,13 +128,12 @@
                             <div class="w-1/5 h-20 bg-slate-300 rounded-t"></div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
     
-   <!-- EL PROBLEMA -->
+    <!-- EL PROBLEMA (BLANCO) -->
     <section id="problema" class="py-24 bg-white text-navy-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="space-y-4 mb-16">
@@ -155,9 +143,7 @@
                 </h2>
             </div>
 
-            <!-- Tres datos clave sin recuadros, limpios sobre el fondo -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-               <!-- Dato 1 -->
                 <div class="flex flex-col">
                     <div class="w-12 h-12 rounded-2xl bg-navy-900 text-white flex items-center justify-center text-xl mb-6 shadow-md">
                         <i class="fa-solid fa-users"></i>
@@ -168,7 +154,6 @@
                     </p>
                 </div>
 
-                <!-- Dato 2 -->
                 <div class="flex flex-col">
                     <div class="w-12 h-12 rounded-2xl bg-navy-900 text-white flex items-center justify-center text-xl mb-6 shadow-md">
                         <i class="fa-solid fa-capsules"></i>
@@ -179,7 +164,6 @@
                     </p>
                 </div>
 
-                <!-- Dato 3 con icono económico corregido y sin caja -->
                 <div class="flex flex-col">
                     <div class="w-12 h-12 rounded-2xl bg-navy-900 text-white flex items-center justify-center text-xl mb-6 shadow-md">
                         <i class="fa-solid fa-euro-sign"></i>
@@ -191,7 +175,6 @@
                 </div>
             </div>
 
-            <!-- Bloque de impacto sin recuadro con borde, limpio y tipográfico -->
             <div class="max-w-3xl mb-16 space-y-6">
                 <h3 class="font-serif font-bold text-2xl text-navy-900">El impacto se traduce en:</h3>
                 <ul class="space-y-4 text-slate-700 text-lg">
@@ -206,22 +189,21 @@
                 </ul>
             </div>
 
-            <!-- Fuentes limpias y discretas sin recuadro pesado -->
             <div class="text-xs text-slate-500 tracking-wider uppercase font-medium pt-8 border-t border-slate-100">
                 Fuente 1: INE, Encuesta nacional de salud &bull; Fuente 2: OMS, Adherence to long-term therapies, 2003 &bull; Fuente 3: Observatorio de la adherencia al tratamiento (OAT) y farmaindustria.
             </div>
         </div>
     </section>
 
-    <!-- QUÉ HACEMOS -->
-    <section id="que-hacemos" class="py-24 bg-white text-navy-900 border-t border-slate-100">
+    <!-- QUÉ HACEMOS (AZUL CON RECUADRO INFERIOR EN BLANCO) -->
+    <section id="que-hacemos" class="py-24 bg-navy-dark text-white border-t border-navy-700/50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="space-y-4 mb-16 max-w-3xl">
-                <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">Plataforma clínica</span>
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-navy-900">
+                <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Plataforma clínica</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-white">
                     Abordamos la adherencia allí donde ocurre.
                 </h2>
-                <p class="text-slate-600 text-lg pt-2 leading-relaxed">
+                <p class="text-slate-300 text-lg pt-2 leading-relaxed">
                     No nos centramos únicamente en si un paciente toma o no su medicación. Nos centramos en detectar y abordar las causas que pueden llevarle a tomar decisiones que perjudiquen su salud.
                 </p>
             </div>
@@ -229,37 +211,38 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
                 <div class="space-y-4">
                     <span class="text-4xl font-serif font-bold text-olive-600">1</span>
-                    <h3 class="font-serif font-bold text-xl text-navy-900">Detectar las causas de no adherencia</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h3 class="font-serif font-bold text-xl text-white">Detectar las causas de no adherencia</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
                         El sistema identifica las dificultades que interfieren con el tratamiento en la vida cotidiana.
                     </p>
                 </div>
                 <div class="space-y-4">
                     <span class="text-4xl font-serif font-bold text-olive-600">2</span>
-                    <h3 class="font-serif font-bold text-xl text-navy-900">Abordarlas a tiempo</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h3 class="font-serif font-bold text-xl text-white">Abordarlas a tiempo</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
                         Proporcionar apoyo cuando aparecen dudas o dificultades, antes de que se conviertan en un problema mayor.
                     </p>
                 </div>
                 <div class="space-y-4">
                     <span class="text-4xl font-serif font-bold text-olive-600">3</span>
-                    <h3 class="font-serif font-bold text-xl text-navy-900">Aportar información al profesional</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h3 class="font-serif font-bold text-xl text-white">Aportar información al profesional</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
                         Ayudar al profesional sanitario a comprender mejor qué ocurre entre consultas y aprovechar mejor el tiempo de atención.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-navy-900 text-white rounded-3xl p-10 lg:p-12 shadow-2xl relative overflow-hidden">
-                <h3 class="text-2xl sm:text-3xl font-serif font-bold mb-4 text-white">
-                    <span class="text-olive-accent">Más apoyo</span> para el paciente.<br>
-                    Más <span class="text-olive-accent">información</span> para abordar un problema que afecta a resultados en salud, seguimiento y utilización de recursos
+            <!-- Recuadro en fondo blanco con letras azules y acentos verdes -->
+            <div class="bg-white text-navy-900 rounded-3xl p-10 lg:p-12 shadow-2xl relative overflow-hidden">
+                <h3 class="text-2xl sm:text-3xl font-serif font-bold mb-4 text-navy-900">
+                    <span class="text-olive-600">Más apoyo</span> para el paciente.<br>
+                    Más <span class="text-olive-600">información</span> para abordar un problema que afecta a resultados en salud, seguimiento y utilización de recursos
                 </h3>
             </div>
         </div>
     </section>
 
-    <!-- SOBRE ADHERE / VISIÓN -->
+    <!-- SOBRE ADHERE / VISIÓN (BLANCO) -->
     <section id="sobre-adhere" class="py-24 bg-white text-navy-900 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6">
             <div class="space-y-4 mb-16">
@@ -289,252 +272,141 @@
         </div>
     </section>
 
-<!-- PRESENCIA / PROPUESTA DE VALOR (FLUJO CLÍNICO) -->
-<section id="propuesta-de-valor" class="py-24 bg-navy-dark text-white relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6">
-        
-        <!-- Contenedor Principal en dos columnas -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <!-- COLUMNA IZQUIERDA (5 columnas): Título, introducción y bloques inferiores -->
-            <div class="lg:col-span-5 space-y-8">
-                <!-- Cabecera de la sección -->
-                <div class="space-y-4">
-                    <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Propuesta de valor</span>
-                    <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-white leading-tight">
-                        Presencia cuando más se necesita.
-                    </h2>
-                    <p class="text-slate-300 text-base font-light leading-relaxed pt-2">
-                        Adhere es una <strong class="text-white font-semibold">herramienta clínica digital</strong> que <span class="text-olive-accent font-medium">identifica la causa raíz</span> de la falta de adherencia mediante un seguimiento continuo y traslada esa información clave al profesional sanitario. A diferencia de otras herramientas, <strong class="text-white font-semibold">facilita las intervenciones tempranas</strong> y <strong class="text-white font-semibold">optimiza las decisiones clínicas.</strong>
-                    </p>
-                </div>
-
-                <!-- Bloques inferiores (Cocreación y Rigor con tarjetas oscuras) -->
-                <div class="space-y-6 pt-4">
-                    <!-- Pilar 1: Cocreación -->
-                    <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 shadow-lg">
-                        <div class="inline-block px-3 py-1 rounded-full bg-olive-600/20 text-olive-accent text-xs font-bold tracking-wider uppercase mb-3">
-                            Diseño co-creado
-                        </div>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            Co-creada por profesionales sanitarios y pacientes bajo colaboraciones y una rigurosa investigación para garantizar su adecuación clínica real en el día a día.
+    <!-- PRESENCIA / PROPUESTA DE VALOR (AZUL) -->
+    <section id="propuesta-de-valor" class="py-24 bg-navy-dark text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Propuesta de valor</span>
+                        <h2 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight text-white leading-tight">
+                            Presencia cuando más se necesita.
+                        </h2>
+                        <p class="text-slate-300 text-base font-light leading-relaxed pt-2">
+                            Adhere es una <strong class="text-white font-semibold">herramienta clínica digital</strong> que <span class="text-olive-accent font-medium">identifica la causa raíz</span> de la falta de adherencia mediante un seguimiento continuo y traslada esa información clave al profesional sanitario. A diferencia de otras herramientas, <strong class="text-white font-semibold">facilita las intervenciones tempranas</strong> y <strong class="text-white font-semibold">optimiza las decisiones clínicas.</strong>
                         </p>
                     </div>
 
-                    <!-- Pilar 2: Rigor -->
-                    <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 shadow-lg">
-                        <div class="inline-block px-3 py-1 rounded-full bg-olive-600/20 text-olive-accent text-xs font-bold tracking-wider uppercase mb-3">
-                            Compromiso con el rigor
+                    <div class="space-y-6 pt-4">
+                        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 shadow-lg">
+                            <div class="inline-block px-3 py-1 rounded-full bg-olive-600/20 text-olive-accent text-xs font-bold tracking-wider uppercase mb-3">
+                                Diseño co-creado
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                Co-creada por profesionales sanitarios y pacientes bajo colaboraciones y una rigurosa investigación para garantizar su adecuación clínica real en el día a día.
+                            </p>
                         </div>
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            La información de Adhere se desarrolla a partir de fuentes sanitarias y científicas verificadas, como guías clínicas, protocolos, organismos y sociedades profesionales.
-                        </p>
+
+                        <div class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 shadow-lg">
+                            <div class="inline-block px-3 py-1 rounded-full bg-olive-600/20 text-olive-accent text-xs font-bold tracking-wider uppercase mb-3">
+                                Compromiso con el rigor
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                La información de Adhere se desarrolla a partir de fuentes sanitarias y científicas verificadas, como guías clínicas, protocolos, organismos y sociedades profesionales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DIAGRAMA DE FLUJO CLÍNICO -->
+                <div class="lg:col-span-7 w-full flex items-center justify-center">
+                    <div class="relative w-full max-w-[560px] h-auto lg:h-[600px] flex flex-col gap-5 lg:block">
+                        <svg class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 560 600" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg" style="z-index: 1;">
+                            <path d="M 221 125 C 258 132, 278 181, 317 181" stroke="#65a30d" stroke-width="2" stroke-linecap="round" />
+                            <path d="M 327 270 C 314 294, 267 300, 226 310" stroke="#65a30d" stroke-width="2" stroke-linecap="round" />
+                            <path d="M 226 470 C 254 480, 272 520, 297 520" stroke="#65a30d" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+
+                        <div class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[221px] lg:h-[204px] flex flex-col justify-start border border-slate-100 transition-all duration-300 hover:shadow-2xl lg:absolute lg:left-0 lg:top-0" style="z-index: 2;">
+                            <div class="flex items-center gap-2.5 mb-6">
+                                <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">01</span>
+                                <h3 class="font-serif font-bold text-sm text-slate-900">El día a día del paciente</h3>
+                            </div>
+                            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">Afronta su tratamiento y sus dudas en su día a día, fuera del entorno clínico, donde suelen surgir las barreras de adherencia.</p>
+                        </div>
+
+                        <div class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[221px] lg:h-[204px] flex flex-col justify-start border border-slate-100 transition-all duration-300 hover:shadow-2xl lg:absolute lg:left-[317px] lg:top-[76px]" style="z-index: 2;">
+                            <div class="flex items-center gap-2.5 mb-6">
+                                <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">02</span>
+                                <h3 class="font-serif font-bold text-sm text-slate-900">Acompañamiento Adhere</h3>
+                            </div>
+                            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">La plataforma brinda apoyo continuo y realiza un seguimiento activo para identificar la causa raíz de las dificultades del paciente.</p>
+                        </div>
+
+                        <div class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[221px] lg:h-[204px] flex flex-col justify-start border border-slate-100 transition-all duration-300 hover:shadow-2xl lg:absolute lg:left-[5px] lg:top-[277px]" style="z-index: 2;">
+                            <div class="flex items-center gap-2.5 mb-6">
+                                <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">03</span>
+                                <h3 class="font-serif font-bold text-sm text-slate-900">Estructuración de datos</h3>
+                            </div>
+                            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">La información se procesa con base en guías clínicas y fuentes científicas verificadas, traduciéndose en métricas comprensibles.</p>
+                        </div>
+
+                        <div class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl w-full lg:w-[221px] lg:h-[204px] flex flex-col justify-start border border-slate-100 transition-all duration-300 hover:shadow-2xl lg:absolute lg:left-[297px] lg:top-[372px]" style="z-index: 2;">
+                            <div class="flex items-center gap-2.5 mb-6">
+                                <span class="w-6 h-6 rounded-full bg-olive-600 text-white font-bold text-xs flex items-center justify-center shrink-0">04</span>
+                                <h3 class="font-serif font-bold text-sm text-slate-900">Decisión clínica óptima</h3>
+                            </div>
+                            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">El profesional sanitario recibe información clave que facilita la intervención temprana y optimiza la atención en consulta.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
-     
-<!-- COLUMNA DERECHA: DIAGRAMA DE FLUJO CLÍNICO -->
-<div class="lg:col-span-7 w-full flex items-center justify-center">
-
-    <div class="relative w-full max-w-[560px] h-auto lg:h-[600px] flex flex-col gap-5 lg:block">
-
-        <!-- CONECTORES VERDES: detrás de las tarjetas -->
-        <svg
-            class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none"
-            viewBox="0 0 560 600"
-            preserveAspectRatio="none"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="z-index: 1;"
-        >
-            <!-- 01 → 02 -->
-            <path
-                d="M 221 125 C 258 132, 278 181, 317 181"
-                stroke="#65a30d"
-                stroke-width="2"
-                stroke-linecap="round"
-            />
-
-            <!-- 02 → 03 -->
-            <path
-                d="M 327 270 C 314 294, 267 300, 226 310"
-                stroke="#65a30d"
-                stroke-width="2"
-                stroke-linecap="round"
-            />
-
-            <!-- 03 → 04 -->
-            <path
-                d="M 226 470 C 254 480, 272 520, 297 520"
-                stroke="#65a30d"
-                stroke-width="2"
-                stroke-linecap="round"
-            />
-        </svg>
-
-        <!-- PASO 01: DÍA A DÍA DEL PACIENTE -->
-        <div
-            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
-                   w-full lg:w-[221px] lg:h-[204px]
-                   flex flex-col justify-start border border-slate-100
-                   transition-all duration-300 hover:shadow-2xl
-                   lg:absolute lg:left-0 lg:top-0"
-            style="z-index: 2;"
-        >
-            <div class="flex items-center gap-2.5 mb-6">
-                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
-                             font-bold text-xs flex items-center justify-center shrink-0">
-                    01
-                </span>
-                <h3 class="font-serif font-bold text-sm text-slate-900">
-                    El día a día del paciente
-                </h3>
-            </div>
-
-            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
-                Afronta su tratamiento y sus dudas en su día a día, fuera del
-                entorno clínico, donde suelen surgir las barreras de adherencia.
-            </p>
         </div>
+    </section>
 
-        <!-- PASO 02: ACOMPAÑAMIENTO ADHERE -->
-        <div
-            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
-                   w-full lg:w-[221px] lg:h-[204px]
-                   flex flex-col justify-start border border-slate-100
-                   transition-all duration-300 hover:shadow-2xl
-                   lg:absolute lg:left-[317px] lg:top-[76px]"
-            style="z-index: 2;"
-        >
-            <div class="flex items-center gap-2.5 mb-6">
-                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
-                             font-bold text-xs flex items-center justify-center shrink-0">
-                    02
-                </span>
-                <h3 class="font-serif font-bold text-sm text-slate-900">
-                    Acompañamiento Adhere
-                </h3>
-            </div>
-
-            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
-                La plataforma brinda apoyo continuo y realiza un seguimiento
-                activo para identificar la causa raíz de las dificultades del paciente.
-            </p>
-        </div>
-
-        <!-- PASO 03: ESTRUCTURACIÓN DE DATOS -->
-        <div
-            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
-                   w-full lg:w-[221px] lg:h-[204px]
-                   flex flex-col justify-start border border-slate-100
-                   transition-all duration-300 hover:shadow-2xl
-                   lg:absolute lg:left-[5px] lg:top-[277px]"
-            style="z-index: 2;"
-        >
-            <div class="flex items-center gap-2.5 mb-6">
-                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
-                             font-bold text-xs flex items-center justify-center shrink-0">
-                    03
-                </span>
-                <h3 class="font-serif font-bold text-sm text-slate-900">
-                    Estructuración de datos
-                </h3>
-            </div>
-
-            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
-                La información se procesa con base en guías clínicas y fuentes
-                científicas verificadas, traduciéndose en métricas comprensibles.
-            </p>
-        </div>
-
-        <!-- PASO 04: DECISIÓN CLÍNICA ÓPTIMA -->
-        <div
-            class="relative bg-white text-slate-900 rounded-3xl p-6 shadow-xl
-                   w-full lg:w-[221px] lg:h-[204px]
-                   flex flex-col justify-start border border-slate-100
-                   transition-all duration-300 hover:shadow-2xl
-                   lg:absolute lg:left-[297px] lg:top-[372px]"
-            style="z-index: 2;"
-        >
-            <div class="flex items-center gap-2.5 mb-6">
-                <span class="w-6 h-6 rounded-full bg-olive-600 text-white
-                             font-bold text-xs flex items-center justify-center shrink-0">
-                    04
-                </span>
-                <h3 class="font-serif font-bold text-sm text-slate-900">
-                    Decisión clínica óptima
-                </h3>
-            </div>
-
-            <p class="text-slate-600 text-xs leading-[1.65] text-center px-1">
-                El profesional sanitario recibe información clave que facilita
-                la intervención temprana y optimiza la atención en consulta.
-            </p>
-        </div>
-
-    </div>
-</div>
-    </div>
-</section>
-    
-<!-- QUIÉN HAY DETRÁS -->
-    <section class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
+    <!-- QUIÉN HAY DETRÁS (BLANCO CON LETRAS AZULES Y RESALTADO VERDE) -->
+    <section class="py-28 bg-white text-navy-900 border-t border-slate-100">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
-            <!-- Foto de la fundadora (se queda fija en su posición actual) -->
+            <!-- Foto de la fundadora -->
             <div class="lg:col-span-5 flex justify-start relative">
                 <div class="w-full max-w-sm relative">
-                    <!-- Sutil resplandor de fondo -->
                     <div class="absolute inset-0 bg-olive-500/10 rounded-3xl blur-2xl -z-10"></div>
-                    
-                    <div class="w-full h-[450px] bg-slate-900 rounded-3xl overflow-hidden border border-slate-700/60 shadow-2xl relative">
+                    <div class="w-full h-[450px] bg-slate-100 rounded-3xl overflow-hidden border border-slate-200 shadow-xl relative">
                         <img src="paula.png" alt="Paula García Martínez" class="w-full h-full object-cover object-top">
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/30 via-transparent to-transparent"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Texto de la historia (desplazado discretamente a la derecha con 'lg:pl-6' para separarlo de la foto) -->
+            <!-- Texto de la historia -->
             <div class="lg:col-span-7 lg:pl-6 space-y-6">
-                <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">¿Quién hay detrás?</span>
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+                <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">¿Quién hay detrás?</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-navy-900 leading-tight">
                     De una pregunta cotidiana a un proyecto sanitario.
                 </h2>
                 
                 <div class="space-y-4 pt-2">
-                    <h3 class="font-serif font-bold text-xl text-olive-accent">Soy Paula García, estudiante de último curso de Medicina y fundadora de Adhere.</h3>
+                    <!-- Manteniendo el color verde original -->
+                    <h3 class="font-serif font-bold text-xl text-olive-600">Soy Paula García, estudiante de último curso de Medicina y fundadora de Adhere.</h3>
                     
-                    <p class="text-slate-300 text-base leading-relaxed font-light">
+                    <p class="text-slate-600 text-base leading-relaxed font-light">
                         Para mí, la medicina siempre ha sido cuidar de personas, no solo tratar enfermedades. Y cuidando de las personas que más quiero fue cuando vi un problema que antes no había visto.
                     </p>
 
-                    <!-- Lista de puntos clave limpia -->
-                    <ul class="space-y-4 text-slate-300 text-base pt-2 border-t border-slate-800">
+                    <ul class="space-y-4 text-slate-600 text-base pt-2 border-t border-slate-200">
                         <li class="flex items-start gap-3">
-                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
-                            <span><strong class="text-white font-medium">El origen:</strong> Todo empezó en casa, viendo a mi abuela enfrentarse a dudas diarias con sus tratamientos. Me di cuenta de que, si yo no estaba allí para detectar esos problemas y ayudarles a resolverlos, nadie más lo hacía y con las consecuencias que eso podía tener para su salud.</span>
+                            <span class="text-olive-600 font-bold mt-1">&bull;</span>
+                            <span><strong class="text-navy-900 font-medium">El origen:</strong> Todo empezó en casa, viendo a mi abuela enfrentarse a dudas diarias con sus tratamientos. Me di cuenta de que, si yo no estaba allí para detectar esos problemas y ayudarles a resolverlos, nadie más lo hacía y con las consecuencias que eso podía tener para su salud.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
-                            <span><strong class="text-white font-medium">La realidad clínica:</strong> Poco después, empecé a ver exactamente lo mismo en consulta. La falta de adherencia no es un fallo del paciente, es una brecha invisible en nuestro sistema que no hemos conseguido solucionar aún.</span>
+                            <span class="text-olive-600 font-bold mt-1">&bull;</span>
+                            <span><strong class="text-navy-900 font-medium">La realidad clínica:</strong> Poco después, empecé a ver exactamente lo mismo en consulta. La falta de adherencia no es un fallo del paciente, es una brecha invisible en nuestro sistema que no hemos conseguido solucionar aún.</span>
                         </li>
                         <li class="flex items-start gap-3">
-                            <span class="text-olive-accent font-bold mt-1">&bull;</span>
-                            <span><strong class="text-white font-medium">Entonces empecé a preguntarme:</strong> ¿Cómo podríamos extender el cuidado sanitario fuera de la clínica para ofrecer apoyo justo cuando más se necesita?</span>
+                            <span class="text-olive-600 font-bold mt-1">&bull;</span>
+                            <span><strong class="text-navy-900 font-medium">Entonces empecé a preguntarme:</strong> ¿Cómo podríamos extender el cuidado sanitario fuera de la clínica para ofrecer apoyo justo cuando más se necesita?</span>
                         </li>
                     </ul>
 
-                    <p class="text-slate-300 text-base leading-relaxed font-light pt-2">
+                    <p class="text-slate-600 text-base leading-relaxed font-light pt-2">
                         Investigar esa duda me llevó a descubrir la magnitud de un problema histórico de la medicina y a diseñar Adhere, con el propósito de estar ahí justo donde se toman las decisiones que influyen en la salud.
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
     
-   <!-- TRAYECTORIA Y APOYOS -->
+    <!-- TRAYECTORIA Y APOYOS (AZUL) -->
     <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <style>
             @keyframes fadeInRight {
@@ -550,11 +422,7 @@
         </style>
 
         <div class="max-w-7xl mx-auto px-6">
-            
-            <!-- Cabecera y Línea de Tiempo -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
-                
-                <!-- Columna Izquierda: Título -->
                 <div class="lg:col-span-5 space-y-4">
                     <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Trayectoria</span>
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
@@ -562,34 +430,27 @@
                     </h2>
                 </div>
 
-                <!-- Columna Derecha: Listado desplegable animado -->
                 <div class="lg:col-span-7 relative pl-6 border-l-2 border-slate-700/80 space-y-8">
-                    
-                    <!-- Hito 1 -->
                     <div class="relative flex items-center timeline-delay-1">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base">Programa pre-incubación Santander X Explorer</p>
                     </div>
 
-                    <!-- Hito 2 -->
                     <div class="relative flex items-center timeline-delay-2">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base">Ganador de Santander X Explorer Tarragona 🏆</p>
                     </div>
 
-                    <!-- Hito 3 -->
                     <div class="relative flex items-center timeline-delay-3">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base">Mención de honor como finalista en Santander X Award 2025-2026 🏆</p>
                     </div>
 
-                    <!-- Hito 4 -->
                     <div class="relative flex items-center timeline-delay-4">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base">Finalista en Falling Walls Lab Barcelona</p>
                     </div>
 
-                    <!-- Hito 5 -->
                     <div class="relative flex items-center timeline-delay-5">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base leading-relaxed">
@@ -597,57 +458,44 @@
                         </p>
                     </div>
 
-                    <!-- Hito 6 -->
                     <div class="relative flex items-center timeline-delay-6">
                         <div class="absolute -left-[31px] w-4 h-4 rounded-full bg-navy-dark border-2 border-olive-accent"></div>
                         <p class="text-white font-medium text-base">Programa de aceleración de MentorDay completado + mentoría</p>
                     </div>
-
                 </div>
             </div>
 
-     <!-- Tarjeta Blanca Inferior con Logos Institucionales -->
-<div class="bg-white rounded-3xl px-8 py-5 shadow-2xl">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-        
-        <!-- Logo 1 -->
-        <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-            <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-20 w-auto object-contain">
-        </div>
-
-        <!-- Logo 2 -->
-        <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-            <img src="logo-urv.jpg" alt="URV Consell Social" class="max-h-24 w-auto object-contain">
-        </div>
-
-        <!-- Logo 3 -->
-        <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-            <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-20 w-auto object-contain">
-        </div>
-
-        <!-- Logo 4 -->
-        <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-            <img src="logo-mentorday.png" alt="mentorDay" class="max-h-20 w-auto object-contain">
-        </div>
-
-        <!-- Logo 5 -->
-        <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-            <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-20 w-auto object-contain">
-        </div>
-
-    </div>
-</div>
+            <!-- Tarjeta Blanca Inferior con Logos -->
+            <div class="bg-white rounded-3xl px-8 py-5 shadow-2xl">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-urv.jpg" alt="URV Consell Social" class="max-h-24 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-mentorday.png" alt="mentorDay" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-20 w-auto object-contain">
+                    </div>
+                </div>
             </div>
-</section>
+        </div>
+    </section>
 
-   <!-- LLAMADA A COLABORAR (Última sección antes del footer) -->
-    <section class="py-28 bg-gradient-to-b from-navy-dark to-[#051322] text-white border-t border-navy-700/50 relative overflow-hidden">
+    <!-- LLAMADA A COLABORAR (BLANCO CON LETRAS AZULES) -->
+    <section class="py-28 bg-white text-navy-900 border-t border-slate-100 relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10">
-            <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Colaboración</span>
-            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white tracking-tight leading-tight">
+            <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">Colaboración</span>
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
                 ¿Quieres formar parte del proyecto?
             </h2>
-            <p class="text-slate-300 text-lg sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+            <p class="text-slate-600 text-lg sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
                 Estamos abiertos a colaborar con profesionales sanitarios, organizaciones y pacientes para seguir desarrollando Adhere.
             </p>
             <div class="pt-4">
@@ -659,96 +507,57 @@
         </div>
     </section>
 
-<!-- FOOTER DE ANCHO COMPLETO -->
-<footer class="w-full bg-[#0a2540] border-t border-[#133456] text-slate-300 py-16 m-0">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- FOOTER DE ANCHO COMPLETO -->
+    <footer class="w-full bg-[#0a2540] border-t border-[#133456] text-slate-300 py-16 m-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+                <div class="space-y-4">
+                    <span class="font-serif font-bold text-white text-xl tracking-wider block">
+                        Adhere
+                    </span>
+                    <p class="text-sm text-slate-300 max-w-xs leading-relaxed">
+                        Acompañamos al paciente allí donde ocurre la adherencia.
+                    </p>
+                </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        EXPLORA
+                    </span>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#sobre-adhere" class="hover:text-white transition">Sobre Adhere</a></li>
+                        <li><a href="#trayectoria" class="hover:text-white transition">Trayectoria</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
 
-            <!-- Columna 1: Marca / Eslogan -->
-            <div class="space-y-4">
-                <span class="font-serif font-bold text-white text-xl tracking-wider block">
-                    Adhere
-                </span>
-
-                <p class="text-sm text-slate-300 max-w-xs leading-relaxed">
-                    Acompañamos al paciente allí donde ocurre la adherencia.
-                </p>
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        CONTACTO
+                    </span>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">adhere.appsalud@gmail.com</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/paula-garcía-martinez-7067303a5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Columna 2: Explora -->
-            <div class="space-y-3">
-                <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
-                    EXPLORA
-                </span>
-
-                <ul class="space-y-2 text-sm">
-                    <li>
-                        <a href="#sobre-adhere" class="hover:text-white transition">
-                            Sobre Adhere
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#trayectoria" class="hover:text-white transition">
-                            Trayectoria
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contacto" class="hover:text-white transition">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
+            <div class="border-t border-[#133456] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>&copy; 2026 Adhere</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:text-white transition">Política de privacidad</a>
+                    <span>&middot;</span>
+                    <a href="#" class="hover:text-white transition">Aviso legal</a>
+                </div>
             </div>
-
-            <!-- Columna 3: Contacto -->
-            <div class="space-y-3">
-                <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
-                    CONTACTO
-                </span>
-
-                <ul class="space-y-2 text-sm">
-                    <li>
-                        <a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">
-                            adhere.appsalud@gmail.com
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.linkedin.com/in/paula-garcía-martinez-7067303a5"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="hover:text-white transition">
-                            LinkedIn
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
+    </footer>
 
-        <!-- Línea divisoria y legales -->
-        <div class="border-t border-[#133456] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-
-            <p>&copy; 2026 Adhere</p>
-
-            <div class="flex items-center gap-3">
-                <a href="#" class="hover:text-white transition">
-                    Política de privacidad
-                </a>
-
-                <span>&middot;</span>
-
-                <a href="#" class="hover:text-white transition">
-                    Aviso legal
-                </a>
-            </div>
-
-        </div>
-    </div>
-</footer>
-
-            <!-- BANNER DE COOKIES FLOTANTE (Pégalo aquí, justo antes del cierre) -->
+    <!-- BANNER DE COOKIES FLOTANTE -->
     <div id="cookie-banner" class="fixed bottom-6 left-6 z-50 max-w-sm bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 text-slate-800 transition-all duration-300">
         <h3 class="font-bold text-sm text-slate-900 mb-2">Valoramos tu privacidad</h3>
         <p class="text-xs text-slate-600 leading-relaxed mb-4">
