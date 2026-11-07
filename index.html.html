@@ -485,7 +485,7 @@
         </script>
     </section>
     
-   <!-- TRAYECTORIA Y APOYOS (AZUL) -->
+ <!-- TRAYECTORIA Y APOYOS (CON CARRUSEL INFINITO DE LOGOS Y TARJETA MÁS ESTRECHA) -->
     <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <style>
             @keyframes fadeInRight {
@@ -498,10 +498,24 @@
             .timeline-delay-4 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.55s; }
             .timeline-delay-5 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.7s; }
             .timeline-delay-6 { animation: fadeInRight 0.7s ease forwards; opacity: 0; animation-delay: 0.85s; }
+
+            /* Animación del carrusel infinito horizontal */
+            @keyframes scrollLogo {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-infinite-scroll {
+                display: flex;
+                width: max-content;
+                animation: scrollLogo 30s linear infinite;
+            }
+            .animate-infinite-scroll:hover {
+                animation-play-state: paused;
+            }
         </style>
 
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
                 <div class="lg:col-span-5 space-y-4">
                     <span class="text-xs font-bold uppercase tracking-widest text-olive-accent block">Trayectoria</span>
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
@@ -544,26 +558,42 @@
                 </div>
             </div>
 
-            <!-- Tarjeta Blanca Inferior con Logos -->
-            <div class="bg-white rounded-3xl px-8 py-5 shadow-2xl">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-20 w-auto object-contain">
+            <!-- Contenedor de logos en carrusel (más estrecho verticalmente) -->
+            <div class="mt-12 max-w-6xl mx-auto">
+                <div class="bg-white text-navy-900 py-4.5 rounded-3xl shadow-[0_10px_30px_-5px_rgba(4,15,30,0.3)] border border-slate-100 overflow-hidden relative">
+                    
+                    <!-- Degradados laterales sutiles -->
+                    <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+
+                    <!-- Pista deslizante infinita -->
+                    <div class="flex overflow-hidden">
+                        <div class="animate-infinite-scroll flex items-center gap-14 px-6">
+                            
+                            <!-- Grupo 1 de Logos -->
+                            <div class="flex items-center gap-14 shrink-0">
+                                <img src="ruta-logo-santander.png" alt="Santander X" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-urv.png" alt="URV Consell Social" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-falling.png" alt="Falling Walls Lab" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-mentorday.png" alt="MentorDay" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-diputacio.png" alt="Diputació de Tarragona" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                            </div>
+
+                            <!-- Grupo 2 de Logos (Duplicado para el bucle continuo) -->
+                            <div class="flex items-center gap-14 shrink-0" aria-hidden="true">
+                                <img src="ruta-logo-santander.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-urv.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-falling.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-mentorday.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                                <img src="ruta-logo-diputacio.png" alt="" class="h-8 max-h-8 object-contain grayscale hover:grayscale-0 transition duration-300">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-urv.jpg" alt="URV Consell Social" class="max-h-24 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-20 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-mentorday.png" alt="mentorDay" class="max-h-20 w-auto object-contain">
-                    </div>
-                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
-                        <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-20 w-auto object-contain">
-                    </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
