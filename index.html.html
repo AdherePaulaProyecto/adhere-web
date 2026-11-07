@@ -272,7 +272,7 @@
         </div>
     </section>
 
-  <!-- SECCIÓN PROPUESTA DE VALOR (TARJETAS RECTANGULARES HORIZONTALES) -->
+<!-- SECCIÓN PROPUESTA DE VALOR (EN ZIGZAG CON CONECTORES VERDES Y TARJETAS RECTANGULARES) -->
     <section class="py-28 bg-[#0a2540] text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -287,7 +287,7 @@
                         Adhere es una <strong class="text-white font-medium">herramienta clínica digital</strong> que identifica la <strong class="text-white font-medium">causa raíz</strong> de la falta de adherencia mediante un seguimiento continuo y traslada esa información clave al profesional sanitario. A diferencia de otras herramientas, <strong class="text-white font-medium">facilita las intervenciones tempranas</strong> y <strong class="text-white font-medium">optimiza las decisiones clínicas</strong>.
                     </p>
 
-                    <!-- Bloques inferiores izquierdos (referencia de tamaño y estilo) -->
+                    <!-- Bloques inferiores izquierdos -->
                     <div class="space-y-4 pt-4">
                         <div class="p-5 rounded-2xl bg-[#133456] border border-[#1f4b7a]">
                             <span class="text-xs font-bold uppercase tracking-widest text-olive-400 block mb-1">Diseño co-creado</span>
@@ -305,58 +305,81 @@
                     </div>
                 </div>
 
-                <!-- Columna Derecha: Tarjetas Rectangulares Horizontales y Alargadas -->
-                <div class="lg:col-span-7 space-y-6 lg:pl-8">
+                <!-- Columna Derecha: Tarjetas Rectangulares en Zigzag con Conectores Verdes -->
+                <div class="lg:col-span-7 relative space-y-8">
                     
-                    <!-- Tarjeta 01 -->
-                    <div class="bg-white text-navy-900 p-7 rounded-3xl shadow-xl flex items-center gap-6 border border-slate-100">
-                        <div class="w-12 h-12 rounded-full bg-olive-100 text-olive-700 font-bold flex items-center justify-center shrink-0 text-lg">
-                            01
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-lg text-navy-900 mb-1">El día a día del paciente</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed font-light">
-                                Afronta su tratamiento y sus dudas en su día a día, fuera del entorno clínico, donde suelen surgir las barreras de adherencia.
-                            </p>
+                    <!-- Línea de conexión verde central en zigzag (efecto visual) -->
+                    <div class="hidden lg:block absolute left-1/2 top-12 bottom-12 w-0.5 bg-olive-600/40 -translate-x-1/2 z-0"></div>
+
+                    <!-- Tarjeta 01 (Izquierda del zigzag) -->
+                    <div class="relative z-10 flex justify-start lg:pr-16">
+                        <div class="bg-white text-navy-900 p-6 rounded-3xl shadow-xl w-full max-w-md border border-slate-100 flex items-start gap-4 relative">
+                            <!-- Conector curvo hacia la línea central -->
+                            <div class="hidden lg:block absolute -right-16 top-1/2 w-16 h-8 border-r-2 border-b-2 border-olive-500 rounded-br-2xl pointer-events-none"></div>
+                            
+                            <div class="w-10 h-10 rounded-full bg-olive-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">
+                                01
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-base text-navy-900 mb-1">El día a día del paciente</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed font-light">
+                                    Afronta su tratamiento y sus dudas en su día a día, fuera del entorno clínico, donde suelen surgir las barreras de adherencia.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 02 -->
-                    <div class="bg-white text-navy-900 p-7 rounded-3xl shadow-xl flex items-center gap-6 border border-slate-100">
-                        <div class="w-12 h-12 rounded-full bg-olive-100 text-olive-700 font-bold flex items-center justify-center shrink-0 text-lg">
-                            02
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-lg text-navy-900 mb-1">Acompañamiento Adhere</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed font-light">
-                                La plataforma brinda apoyo continuo y realiza un seguimiento activo para identificar la causa raíz de las dificultades del paciente.
-                            </p>
+                    <!-- Tarjeta 02 (Derecha del zigzag) -->
+                    <div class="relative z-10 flex justify-end lg:pl-16">
+                        <div class="bg-white text-navy-900 p-6 rounded-3xl shadow-xl w-full max-w-md border border-slate-100 flex items-start gap-4 relative">
+                            <!-- Conector curvo hacia la línea central -->
+                            <div class="hidden lg:block absolute -left-16 top-1/2 w-16 h-8 border-l-2 border-b-2 border-olive-500 rounded-bl-2xl pointer-events-none"></div>
+
+                            <div class="w-10 h-10 rounded-full bg-olive-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">
+                                02
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-base text-navy-900 mb-1">Acompañamiento Adhere</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed font-light">
+                                    La plataforma brinda apoyo continuo y realiza un seguimiento activo para identificar la causa raíz de las dificultades del paciente.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 03 -->
-                    <div class="bg-white text-navy-900 p-7 rounded-3xl shadow-xl flex items-center gap-6 border border-slate-100">
-                        <div class="w-12 h-12 rounded-full bg-olive-100 text-olive-700 font-bold flex items-center justify-center shrink-0 text-lg">
-                            03
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-lg text-navy-900 mb-1">Estructuración de datos</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed font-light">
-                                La información se procesa con base en guías clínicas y fuentes científicas verificadas, traduciéndose en métricas comprensibles.
-                            </p>
+                    <!-- Tarjeta 03 (Izquierda del zigzag) -->
+                    <div class="relative z-10 flex justify-start lg:pr-16">
+                        <div class="bg-white text-navy-900 p-6 rounded-3xl shadow-xl w-full max-w-md border border-slate-100 flex items-start gap-4 relative">
+                            <!-- Conector curvo hacia la línea central -->
+                            <div class="hidden lg:block absolute -right-16 top-1/2 w-16 h-8 border-r-2 border-b-2 border-olive-500 rounded-br-2xl pointer-events-none"></div>
+
+                            <div class="w-10 h-10 rounded-full bg-olive-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">
+                                03
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-base text-navy-900 mb-1">Estructuración de datos</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed font-light">
+                                    La información se procesa con base en guías clínicas y fuentes científicas verificadas, traduciéndose en métricas comprensibles.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Tarjeta 04 -->
-                    <div class="bg-white text-navy-900 p-7 rounded-3xl shadow-xl flex items-center gap-6 border border-slate-100">
-                        <div class="w-12 h-12 rounded-full bg-olive-100 text-olive-700 font-bold flex items-center justify-center shrink-0 text-lg">
-                            04
-                        </div>
-                        <div>
-                            <h3 class="font-serif font-bold text-lg text-navy-900 mb-1">Decisión clínica óptima</h3>
-                            <p class="text-sm text-slate-600 leading-relaxed font-light">
-                                El profesional sanitario recibe información clave que facilita la intervención temprana y optimiza la atención en consulta.
-                            </p>
+                    <!-- Tarjeta 04 (Derecha del zigzag) -->
+                    <div class="relative z-10 flex justify-end lg:pl-16">
+                        <div class="bg-white text-navy-900 p-6 rounded-3xl shadow-xl w-full max-w-md border border-slate-100 flex items-start gap-4 relative">
+                            <!-- Conector curvo hacia la línea central -->
+                            <div class="hidden lg:block absolute -left-16 top-1/2 w-16 h-8 border-l-2 border-b-2 border-olive-500 rounded-bl-2xl pointer-events-none"></div>
+
+                            <div class="w-10 h-10 rounded-full bg-olive-600 text-white font-bold flex items-center justify-center shrink-0 text-sm">
+                                04
+                            </div>
+                            <div>
+                                <h3 class="font-serif font-bold text-base text-navy-900 mb-1">Decisión clínica óptima</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed font-light">
+                                    El profesional sanitario recibe información clave que facilita la intervención temprana y optimiza la atención en consulta.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
