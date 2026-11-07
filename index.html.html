@@ -454,7 +454,7 @@
         </div>
     </section>
     
-    <!-- TRAYECTORIA Y APOYOS -->
+   <!-- TRAYECTORIA Y APOYOS (AZUL) -->
     <section id="trayectoria" class="py-28 bg-navy-dark text-white border-t border-navy-700/50">
         <style>
             @keyframes fadeInRight {
@@ -512,8 +512,129 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tarjeta Blanca Inferior con Logos -->
+            <div class="bg-white rounded-3xl px-8 py-5 shadow-2xl">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-santander.png" alt="Santander X Explorer" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-urv.jpg" alt="URV Consell Social" class="max-h-24 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-fallingwalls.webp" alt="Falling Walls LAB" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-mentorday.png" alt="mentorDay" class="max-h-20 w-auto object-contain">
+                    </div>
+                    <div class="flex items-center justify-center p-2 transition-all duration-300 hover:scale-110 hover:brightness-110">
+                        <img src="logo-diputacio.svg" alt="Diputació Tarragona" class="max-h-20 w-auto object-contain">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+<!-- SECCIÓN COLABORACIÓN (BLANCO LIMPIO) -->
+    <section class="py-28 bg-white text-navy-900 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">Colaboración</span>
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
+                ¿Quieres formar parte del proyecto?
+            </h2>
+            <p class="text-slate-600 text-lg sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                Estamos abiertos a colaborar con profesionales sanitarios, organizaciones y pacientes para seguir desarrollando Adhere.
+            </p>
+            <div class="pt-4">
+                <a href="mailto:adhere.appsalud@gmail.com" id="contacto" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-olive-600 hover:bg-olive-500 text-white font-semibold text-base transition shadow-xl shadow-olive-600/30 border border-olive-700 group">
+                    <span>Contacta con nosotros</span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (AZUL MARINO LIMPIO) -->
+    <footer class="w-full bg-[#0a2540] border-t border-navy-700/50 text-slate-300 py-16 m-0">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+                <div class="space-y-4">
+                    <span class="font-serif font-bold text-white text-xl tracking-wider block">
+                        Adhere
+                    </span>
+                    <p class="text-sm text-slate-300 max-w-xs leading-relaxed">
+                        Acompañamos al paciente allí donde ocurre la adherencia.
+                    </p>
+                </div>
+
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        EXPLORA
+                    </span>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><a href="#sobre-adhere" class="hover:text-white transition">Sobre Adhere</a></li>
+                        <li><a href="#trayectoria" class="hover:text-white transition">Trayectoria</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        CONTACTO
+                    </span>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">adhere.appsalud@gmail.com</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/paula-garcía-martinez-7067303a5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[#133456] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>&copy; 2026 Adhere</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:text-white transition">Política de privacidad</a>
+                    <span>&middot;</span>
+                    <a href="#" class="hover:text-white transition">Aviso legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BANNER DE COOKIES FLOTANTE -->
+    <div id="cookie-banner" class="fixed bottom-6 left-6 z-50 max-w-sm bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 text-slate-800 transition-all duration-300">
+        <h3 class="font-bold text-sm text-slate-900 mb-2">Valoramos tu privacidad</h3>
+        <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación y analizar el tráfico de la web. Al hacer clic en "Aceptar todo", consientes su uso.
+        </p>
+        <div class="flex items-center gap-2">
+            <button onclick="aceptarCookies()" class="flex-1 bg-navy-900 hover:bg-navy-800 text-white text-xs font-medium py-2 px-4 rounded-xl transition shadow-sm">
+                Aceptar todo
+            </button>
+            <button onclick="rechazarCookies()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-medium py-2 px-3 rounded-xl transition">
+                Rechazar
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function aceptarCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+            localStorage.setItem('cookiesAceptadas', 'true');
+        }
+        function rechazarCookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        window.onload = function() {
+            if (localStorage.getItem('cookiesAceptadas') === 'true') {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 </html>
