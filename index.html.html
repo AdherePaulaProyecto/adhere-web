@@ -487,10 +487,19 @@
         </div>
     </section>
 
-<!-- SECCIÓN COLABORACIÓN Y FOOTER CON DEGRADADO CONTINUO -->
-    <section class="pt-28 bg-gradient-to-b from-white via-slate-50 to-[#0a2540] text-navy-900 border-t border-slate-100 relative">
-        <!-- Contenido de Colaboración -->
-        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10 pb-28">
+<!-- SECCIÓN COLABORACIÓN Y FOOTER CON BASE AZUL SÓLIDA ABAJO -->
+    <section class="pt-28 pb-16 text-navy-900 border-t border-slate-100 relative overflow-hidden"
+             style="background: linear-gradient(to bottom, 
+                #ffffff 0%, 
+                #ffffff 38%, 
+                rgba(10, 37, 64, 0.08) 50%, 
+                rgba(10, 37, 64, 0.35) 65%, 
+                rgba(10, 37, 64, 0.80) 80%, 
+                #0a2540 92%, 
+                #0a2540 100%);">
+        
+        <!-- Bloque de Colaboración (Arriba, sobre fondo blanco) -->
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8 relative z-10 mb-28">
             <span class="text-xs font-bold uppercase tracking-widest text-olive-600 block">Colaboración</span>
             <h2 class="text-4xl sm:text-5xl font-serif font-bold text-navy-900 tracking-tight leading-tight">
                 ¿Quieres formar parte del proyecto?
@@ -506,52 +515,50 @@
             </div>
         </div>
 
-        <!-- Footer integrado en la zona azul del degradado -->
-        <footer class="w-full text-slate-300 pb-16 pt-8 m-0 border-t border-slate-700/40">
-            <div class="max-w-7xl mx-auto px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
-                    <div class="space-y-4">
-                        <span class="font-serif font-bold text-white text-xl tracking-wider block">
-                            Adhere
-                        </span>
-                        <p class="text-sm text-slate-300 max-w-xs leading-relaxed">
-                            Acompañamos al paciente allí donde ocurre la adherencia.
-                        </p>
-                    </div>
-
-                    <div class="space-y-3">
-                        <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
-                            EXPLORA
-                        </span>
-                        <ul class="space-y-2 text-sm text-slate-300">
-                            <li><a href="#sobre-adhere" class="hover:text-white transition">Sobre Adhere</a></li>
-                            <li><a href="#trayectoria" class="hover:text-white transition">Trayectoria</a></li>
-                            <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="space-y-3">
-                        <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
-                            CONTACTO
-                        </span>
-                        <ul class="space-y-2 text-sm text-slate-300">
-                            <li><a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">adhere.appsalud@gmail.com</a></li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/paula-garcía-martinez-7067303a5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
-                                    LinkedIn
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <!-- Footer (Abajo, reposando completamente sobre el azul sólido) -->
+        <footer class="max-w-7xl mx-auto px-6 lg:px-8 text-slate-300 relative z-10 pt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12">
+                <div class="space-y-4">
+                    <span class="font-serif font-bold text-white text-xl tracking-wider block">
+                        Adhere
+                    </span>
+                    <p class="text-sm text-slate-300 max-w-xs leading-relaxed">
+                        Acompañamos al paciente allí donde ocurre la adherencia.
+                    </p>
                 </div>
 
-                <div class="border-t border-slate-700/50 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
-                    <p>&copy; 2026 Adhere</p>
-                    <div class="flex items-center gap-3">
-                        <a href="#" class="hover:text-white transition">Política de privacidad</a>
-                        <span>&middot;</span>
-                        <a href="#" class="hover:text-white transition">Aviso legal</a>
-                    </div>
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        EXPLORA
+                    </span>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><a href="#sobre-adhere" class="hover:text-white transition">Sobre Adhere</a></li>
+                        <li><a href="#trayectoria" class="hover:text-white transition">Trayectoria</a></li>
+                        <li><a href="#contacto" class="hover:text-white transition">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-white block mb-2">
+                        CONTACTO
+                    </span>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li><a href="mailto:adhere.appsalud@gmail.com" class="hover:text-white transition">adhere.appsalud@gmail.com</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/paula-garcía-martinez-7067303a5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-[#133456] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+                <p>&copy; 2026 Adhere</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hover:text-white transition">Política de privacidad</a>
+                    <span>&middot;</span>
+                    <a href="#" class="hover:text-white transition">Aviso legal</a>
                 </div>
             </div>
         </footer>
